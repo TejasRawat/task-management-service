@@ -1,0 +1,72 @@
+# Schema for TaskManagerService
+
+scalar Date
+scalar Instant
+scalar Upload
+
+enum TaskPriorityDto {
+    HIGH
+    MEDIUM
+    LOW
+    NONE
+}
+
+enum TaskStatusDto {
+    CREATED
+    TODO
+    IN_PROGRESS
+    COMPLETED
+}
+
+type TaskDto {
+    id: String!
+    title: String!
+    description: String!
+    priority: TaskPriorityDto
+    status: TaskStatusDto!
+    dueDate: Date
+    createDate: Instant!
+}
+
+input CreateTaskDto {
+    title: String!
+    description: String!
+    priority: TaskPriorityDto!
+    dueDate: Date
+}
+
+input UpdateTaskDto {
+    id: String!
+    title: String
+    description: String
+    priority: TaskPriorityDto
+    status: TaskStatusDto
+    dueDate: Date
+}
+
+type Query {
+    getTasksByFilter(filter : TaskFilterInput!) : [TaskDto!]!
+
+    # Implement later
+    searchTasks(searchTerm: String!): [TaskDto!]!
+    getTaskStats: TaskStatsDto!
+}
+
+input TaskFilterInput {
+    priority: TaskPriorityDto
+    status: TaskStatusDto
+    dueDateBefore: Date
+}
+
+type TaskStatsDto {
+    totalTasks: Int!
+    completedTasks: Int!
+    pendingTasks: Int!
+    overdueTasks: Int!
+}
+
+type Mutation {
+    createTask(input: CreateTaskDto!): TaskDto!
+    updateTask(input: UpdateTaskDto!): TaskDto!
+    deleteTaskById(id: String!): Boolean!
+}

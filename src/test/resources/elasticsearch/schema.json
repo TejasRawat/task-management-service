@@ -1,0 +1,26 @@
+{
+  "mappings": {
+    "properties": {
+      "title": {
+        "type": "text"
+      },
+      "description": {
+        "type": "text"
+      },
+      "priority": {
+        "type": "keyword"
+      },
+      "status": {
+        "type": "keyword"
+      },
+      "dueDate": {
+        "type": "date",
+        "format": "strict_date"
+      },
+      "createdDate": {
+        "type": "date",
+        "format": "strict_date_time"
+      }
+    }
+  }
+}
