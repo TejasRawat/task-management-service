@@ -1,6 +1,6 @@
-package com.example.taskmanagement.infrastructure.repository.mysql.repository;
+package com.example.taskmanagement.infrastructure.mysql.repository;
 
-import com.example.taskmanagement.infrastructure.repository.mysql.entity.TaskMySQLEntity;
+import com.example.taskmanagement.infrastructure.mysql.entity.TaskMySQLEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;

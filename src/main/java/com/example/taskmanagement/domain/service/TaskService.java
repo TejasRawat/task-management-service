@@ -5,8 +5,8 @@ import com.example.taskmanagement.domain.model.Task;
 import com.example.taskmanagement.domain.model.TaskFilter;
 import com.example.taskmanagement.domain.model.UpdateTask;
 import com.example.taskmanagement.domain.port.in.ITaskService;
-import com.example.taskmanagement.infrastructure.repository.elasticsearch.repository.TaskESRepository;
-import com.example.taskmanagement.infrastructure.repository.mysql.adapter.TaskMySQLAdapter;
+import com.example.taskmanagement.infrastructure.elasticsearch.repository.TaskESRepository;
+
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.example.taskmanagement.infrastructure.repository.elasticsearch.repository;
+package com.example.taskmanagement.infrastructure.elasticsearch.repository;
 
 import co.elastic.clients.elasticsearch.ElasticsearchClient;
 import co.elastic.clients.elasticsearch._types.Result;
@@ -18,10 +18,10 @@ import com.example.taskmanagement.domain.model.TaskPriority;
 import com.example.taskmanagement.domain.model.TaskStatus;
 import com.example.taskmanagement.domain.model.UpdateTask;
 import com.example.taskmanagement.domain.port.out.TaskDBPort;
-import com.example.taskmanagement.infrastructure.repository.elasticsearch.constants.ElasticSearchConstants;
-import com.example.taskmanagement.infrastructure.repository.elasticsearch.constants.SchemaConstants;
-import com.example.taskmanagement.infrastructure.repository.elasticsearch.entity.TaskESDoc;
-import com.example.taskmanagement.infrastructure.repository.elasticsearch.mapper.TaskESMapper;
+import com.example.taskmanagement.infrastructure.elasticsearch.constants.ElasticSearchConstants;
+import com.example.taskmanagement.infrastructure.elasticsearch.constants.SchemaConstants;
+import com.example.taskmanagement.infrastructure.elasticsearch.entity.TaskESDoc;
+import com.example.taskmanagement.infrastructure.elasticsearch.mapper.TaskESMapper;
 import java.util.List;
 import java.util.function.Function;
 import lombok.RequiredArgsConstructor;

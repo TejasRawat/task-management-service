@@ -11,7 +11,7 @@ import com.example.taskmanagement.codegen.types.TaskStatusDto;
 import com.example.taskmanagement.common.AbstractElasticsearchIntegrationTest;
 import com.example.taskmanagement.domain.model.TaskPriority;
 import com.example.taskmanagement.domain.model.TaskStatus;
-import com.example.taskmanagement.infrastructure.repository.elasticsearch.entity.TaskESDoc;
+import com.example.taskmanagement.infrastructure.elasticsearch.entity.TaskESDoc;
 import com.jayway.jsonpath.TypeRef;
 import com.netflix.graphql.dgs.DgsQueryExecutor;
 import com.netflix.graphql.dgs.client.codegen.GraphQLQueryRequest;

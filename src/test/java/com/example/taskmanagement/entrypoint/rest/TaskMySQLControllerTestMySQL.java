@@ -13,7 +13,7 @@ import com.example.taskmanagement.domain.model.TaskStatus;
 import com.example.taskmanagement.entrypoint.rest.dto.TaskRestCreateRequest;
 import com.example.taskmanagement.entrypoint.rest.dto.TaskRestResponse;
 import com.example.taskmanagement.entrypoint.rest.dto.TaskRestUpdateRequest;
-import com.example.taskmanagement.infrastructure.repository.mysql.entity.TaskMySQLEntity;
+import com.example.taskmanagement.infrastructure.mysql.entity.TaskMySQLEntity;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.LinkedList;

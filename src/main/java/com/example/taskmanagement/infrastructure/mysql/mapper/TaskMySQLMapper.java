@@ -1,10 +1,10 @@
-package com.example.taskmanagement.infrastructure.repository.mysql.mapper;
+package com.example.taskmanagement.infrastructure.mysql.mapper;
 
 import com.example.taskmanagement.domain.model.CreateTask;
 import com.example.taskmanagement.domain.model.Task;
 import com.example.taskmanagement.domain.model.TaskPriority;
 import com.example.taskmanagement.domain.model.TaskStatus;
-import com.example.taskmanagement.infrastructure.repository.mysql.entity.TaskMySQLEntity;
+import com.example.taskmanagement.infrastructure.mysql.entity.TaskMySQLEntity;
 import java.util.Optional;
 
 public class TaskMySQLMapper {

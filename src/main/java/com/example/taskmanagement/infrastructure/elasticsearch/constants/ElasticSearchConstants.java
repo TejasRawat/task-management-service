@@ -1,4 +1,4 @@
-package com.example.taskmanagement.infrastructure.repository.elasticsearch.constants;
+package com.example.taskmanagement.infrastructure.elasticsearch.constants;
 
 public class ElasticSearchConstants {
 

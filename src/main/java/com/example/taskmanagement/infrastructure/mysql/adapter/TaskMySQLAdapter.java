@@ -1,7 +1,4 @@
-package com.example.taskmanagement.infrastructure.repository.mysql.adapter;
-
-import static com.example.taskmanagement.infrastructure.repository.mysql.mapper.TaskMySQLMapper.toDomain;
-import static com.example.taskmanagement.infrastructure.repository.mysql.mapper.TaskMySQLMapper.toEntity;
+package com.example.taskmanagement.infrastructure.mysql.adapter;
 
 import com.example.taskmanagement.domain.exception.TaskNotFoundException;
 import com.example.taskmanagement.domain.model.CreateTask;
@@ -9,10 +6,11 @@ import com.example.taskmanagement.domain.model.Task;
 import com.example.taskmanagement.domain.model.TaskFilter;
 import com.example.taskmanagement.domain.model.UpdateTask;
 import com.example.taskmanagement.domain.port.out.TaskDBPort;
-import com.example.taskmanagement.infrastructure.repository.mysql.entity.TaskMySQLEntity;
-import com.example.taskmanagement.infrastructure.repository.mysql.mapper.TaskMySQLMapper;
-import com.example.taskmanagement.infrastructure.repository.mysql.repository.TaskMySQLRepository;
-import com.example.taskmanagement.infrastructure.repository.mysql.specification.TaskSpecifications;
+import com.example.taskmanagement.infrastructure.mysql.entity.TaskMySQLEntity;
+import com.example.taskmanagement.infrastructure.mysql.mapper.TaskMySQLMapper;
+import com.example.taskmanagement.infrastructure.mysql.repository.TaskMySQLRepository;
+import com.example.taskmanagement.infrastructure.mysql.specification.TaskSpecifications;
+
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.jpa.domain.Specification;
@@ -26,9 +24,9 @@ public class TaskMySQLAdapter implements TaskDBPort {
 
   @Override
   public Task saveTask(CreateTask createTask) {
-    TaskMySQLEntity entity = toEntity(createTask);
+    TaskMySQLEntity entity = TaskMySQLMapper.toEntity(createTask);
     TaskMySQLEntity taskMySQLEntity = taskMySQLRepository.save(entity);
-    return toDomain(taskMySQLEntity);
+    return TaskMySQLMapper.toDomain(taskMySQLEntity);
   }
 
   @Override
@@ -59,7 +57,7 @@ public class TaskMySQLAdapter implements TaskDBPort {
       task.setDueDate(updateTask.getDueDate());
     }
 
-    return toDomain(taskMySQLRepository.save(task));
+    return TaskMySQLMapper.toDomain(taskMySQLRepository.save(task));
   }
 
   @Override

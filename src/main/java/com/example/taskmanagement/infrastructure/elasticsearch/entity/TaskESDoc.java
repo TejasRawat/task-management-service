@@ -1,4 +1,4 @@
-package com.example.taskmanagement.infrastructure.repository.elasticsearch.entity;
+package com.example.taskmanagement.infrastructure.elasticsearch.entity;
 
 import com.example.taskmanagement.domain.model.TaskPriority;
 import com.example.taskmanagement.domain.model.TaskStatus;

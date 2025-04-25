@@ -12,7 +12,7 @@ import com.example.taskmanagement.common.AbstractMySQLIntegrationTest;
 import com.example.taskmanagement.common.TestMySQLTaskRepository;
 import com.example.taskmanagement.domain.model.TaskPriority;
 import com.example.taskmanagement.domain.model.TaskStatus;
-import com.example.taskmanagement.infrastructure.repository.mysql.entity.TaskMySQLEntity;
+import com.example.taskmanagement.infrastructure.mysql.entity.TaskMySQLEntity;
 import com.jayway.jsonpath.TypeRef;
 import com.netflix.graphql.dgs.DgsQueryExecutor;
 import com.netflix.graphql.dgs.client.codegen.GraphQLQueryRequest;

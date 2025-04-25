@@ -1,11 +1,12 @@
-package com.example.taskmanagement.infrastructure.repository.elasticsearch.mapper;
+package com.example.taskmanagement.infrastructure.elasticsearch.mapper;
 
 import com.example.taskmanagement.domain.model.CreateTask;
 import com.example.taskmanagement.domain.model.Task;
 import com.example.taskmanagement.domain.model.TaskPriority;
 import com.example.taskmanagement.domain.model.TaskStatus;
 import com.example.taskmanagement.domain.model.UpdateTask;
-import com.example.taskmanagement.infrastructure.repository.elasticsearch.entity.TaskESDoc;
+import com.example.taskmanagement.infrastructure.elasticsearch.entity.TaskESDoc;
+
 import java.time.Instant;
 import java.util.Optional;
 import java.util.UUID;

@@ -1,4 +1,4 @@
-package com.example.taskmanagement.infrastructure.repository.mysql.entity;
+package com.example.taskmanagement.infrastructure.mysql.entity;
 
 import com.example.taskmanagement.domain.model.TaskPriority;
 import com.example.taskmanagement.domain.model.TaskStatus;

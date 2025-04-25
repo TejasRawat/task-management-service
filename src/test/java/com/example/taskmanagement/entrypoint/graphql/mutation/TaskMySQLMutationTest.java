@@ -19,7 +19,7 @@ import com.example.taskmanagement.codegen.types.TaskPriorityDto;
 import com.example.taskmanagement.codegen.types.TaskStatusDto;
 import com.example.taskmanagement.codegen.types.UpdateTaskDto;
 import com.example.taskmanagement.common.AbstractMySQLIntegrationTest;
-import com.example.taskmanagement.infrastructure.repository.mysql.entity.TaskMySQLEntity;
+import com.example.taskmanagement.infrastructure.mysql.entity.TaskMySQLEntity;
 import com.netflix.graphql.dgs.DgsQueryExecutor;
 import com.netflix.graphql.dgs.client.codegen.GraphQLQueryRequest;
 import graphql.ExecutionResult;

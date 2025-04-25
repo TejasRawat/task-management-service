@@ -1,8 +1,8 @@
-package com.example.taskmanagement.infrastructure.repository.mysql.specification;
+package com.example.taskmanagement.infrastructure.mysql.specification;
 
 import com.example.taskmanagement.domain.model.TaskPriority;
 import com.example.taskmanagement.domain.model.TaskStatus;
-import com.example.taskmanagement.infrastructure.repository.mysql.entity.TaskMySQLEntity;
+import com.example.taskmanagement.infrastructure.mysql.entity.TaskMySQLEntity;
 import java.time.LocalDate;
 import org.springframework.data.jpa.domain.Specification;
 
